@@ -5,13 +5,20 @@
 //   reverse('Hello!') === '!olleH'
 
 function reverse(str) {
-  //1st way
-  let newString = "";
-  for (var i = str.length - 1; i >= 0; i--) {
-    newString += str[i]; // or newString = newString + str[i];
-  }
+	//1st way
+  //let newString=""
+  // 	for (var i = str.length - 1; i >= 0; i--) {
+  //         newString += str[i]; // or newString = newString + str[i];
+  //     }
 
-  return newString;
+  //   return newString;
+  // second way using split method
+  let newStr = [];
+  str = str.split("");
+  for (let i = str.length - 1; i >= 0; i--) {
+    newStr.push(str[i]);
+  }
+  return newStr.join("");
 }
 
 reverse("abcd");
