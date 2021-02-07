@@ -10,8 +10,8 @@
 function reverseInt(n) {
   let number = n.toString().split("").reverse().join("");
   number = parseInt(number)
-  if (number < 0) {
-    console.log("negative")
+  if (n < 0) {
+   // console.log("negative")
     return number * -1;
   }
 
@@ -63,3 +63,8 @@ describe("Integer Reversal", () => {
 });
 
 mocha.run();
+
+ 
+// const total = (subTotal,total)=>{
+//    return add(subTotal,total)
+// }
